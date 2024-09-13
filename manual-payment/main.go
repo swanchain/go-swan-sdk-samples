@@ -70,7 +70,7 @@ func main() {
 	}
 
 	taskUUUID := resp.TaskUuid
-	log.Printf("create task successfully, task_uuid: %s, tx_hash: %s \n", taskUUUID, resp.TxHash)
+	log.Printf("create task successfully, task_uuid: %s", taskUUUID)
 
 	// estimate the amount to be paid
 	needPayAmount, err := apiClient.EstimatePayment(instanceType, durationTime.Seconds())

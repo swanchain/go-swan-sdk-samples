@@ -1,8 +1,8 @@
-module github.com/swanchain/go-swan-sdk-samples/hello-world
+module github.com/swanchain/go-swan-sdk-samples/vm-ssh
 
 go 1.21
 
-require github.com/swanchain/go-swan-sdk v0.0.0-20240912073759-70245ca7ff3f
+require github.com/swanchain/go-swan-sdk v0.0.0-20240913080915-558ba0d806ae
 
 require (
 	github.com/Microsoft/go-winio v0.6.2 // indirect

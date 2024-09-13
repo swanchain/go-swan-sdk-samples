@@ -56,7 +56,7 @@ func main() {
 		log.Fatalf("not found available resources")
 	}
 
-	startTimeout := 300 // unit seconds
+	startTimeout := 600 // unit seconds
 	resp, err := apiClient.CreateTask(&swan.CreateTaskReq{
 		Duration:      time.Hour, // running hours for your deployment
 		RepoUri:       repoUri,

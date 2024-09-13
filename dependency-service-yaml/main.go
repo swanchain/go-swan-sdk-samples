@@ -33,7 +33,7 @@ const (
 			A Dockerfile or yaml file is required in the specified repository or directory for the deployment to work.
 			These files are typically used to define how the application should be built and deployed.
 	*/
-	repoUri = "https://github.com/swanchain/awesome-swanchain/tree/main/CodiMD"
+	repoUri = "https://lagrange.computer/spaces/0x3350BfBCd9AC435cD3c410BC98E1Ec5b94a662e5/CodiMD-Test/app"
 )
 
 func main() {
