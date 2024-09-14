@@ -2,7 +2,7 @@ module github.com/swanchain/go-swan-sdk-samples/Llama3
 
 go 1.21
 
-require github.com/swanchain/go-swan-sdk v0.0.0-20240913080915-558ba0d806ae
+require github.com/swanchain/go-swan-sdk v0.0.0-20240914065949-5ed6eae3a3e3
 
 require (
 	github.com/Microsoft/go-winio v0.6.2 // indirect

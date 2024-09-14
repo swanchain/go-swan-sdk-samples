@@ -8,9 +8,6 @@ import (
 )
 
 const (
-	// testnet sets sdk environment
-	testnet = true
-
 	// apiKey serves for authentication and authorization.
 	apiKey = ""
 
@@ -26,7 +23,7 @@ const (
 )
 
 func main() {
-	apiClient, err := swan.NewAPIClient(apiKey, testnet)
+	apiClient, err := swan.NewAPIClient(apiKey)
 	if err != nil {
 		log.Fatalf("failed to init swan client, error: %v \n", err)
 	}

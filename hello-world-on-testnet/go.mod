@@ -1,6 +1,6 @@
-module github.com/swanchain/go-swan-sdk-samples/task-renew
+module github.com/swanchain/go-swan-sdk-samples/hello-world-on-testnet
 
-go 1.21
+go 1.22.3
 
 require github.com/swanchain/go-swan-sdk v0.0.0-20240914065949-5ed6eae3a3e3
 

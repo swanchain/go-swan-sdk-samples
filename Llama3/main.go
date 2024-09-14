@@ -10,9 +10,6 @@ import (
 // Llama3 is an example showing how to deploy a github yaml repo with auto pay.
 
 const (
-	// testnet sets sdk environment
-	testnet = true
-
 	// apiKey serves for authentication and authorization.
 	apiKey = ""
 
@@ -39,7 +36,7 @@ const (
 )
 
 func main() {
-	apiClient, err := swan.NewAPIClient(apiKey, testnet)
+	apiClient, err := swan.NewAPIClient(apiKey)
 	if err != nil {
 		log.Fatalf("failed to init swan client, error: %v \n", err)
 	}
@@ -47,7 +44,7 @@ func main() {
 	// get available resources and select one to deploy
 	resources, err := apiClient.InstanceResources(true)
 	if err != nil {
-		log.Fatalf("failed to init swan client, error: %v \n", err)
+		log.Fatalf("failed to get instance resources, error: %v \n", err)
 	}
 
 	if len(resources) == 0 {

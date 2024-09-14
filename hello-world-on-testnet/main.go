@@ -1,13 +1,15 @@
 package main
 
 import (
+	"github.com/swanchain/go-swan-sdk"
 	"log"
 	"time"
-
-	"github.com/swanchain/go-swan-sdk"
 )
 
 const (
+	// If set to true use testnet, default is mainnet.
+	isTestnet = true
+
 	// apiKey serves for authentication and authorization.
 	apiKey = ""
 
@@ -30,11 +32,11 @@ const (
 			A Dockerfile or yaml file is required in the specified repository or directory for the deployment to work.
 			These files are typically used to define how the application should be built and deployed.
 	*/
-	repoUri = "https://lagrange.computer/spaces/0x3350BfBCd9AC435cD3c410BC98E1Ec5b94a662e5/CodiMD-Test/app"
+	repoUri = "https://github.com/swanchain/awesome-swanchain/tree/main/hello_world"
 )
 
 func main() {
-	apiClient, err := swan.NewAPIClient(apiKey)
+	apiClient, err := swan.NewAPIClient(apiKey, isTestnet)
 	if err != nil {
 		log.Fatalf("failed to init swan client, error: %v \n", err)
 	}
