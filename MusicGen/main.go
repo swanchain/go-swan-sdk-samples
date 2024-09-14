@@ -23,7 +23,7 @@ const (
 	/*
 		1. Allowed Repo URIs
 			GitHub Repositories: Must be in the format https://github.com/{owner}/{project}/*.
-			Lagrange Repositories: Must be in the format https://lagrange.computer/{owner}/{project}/*.
+			Lagrange Repositories: Must be in the format https://lagrange.computer/spaces/{owner}/{project}/*.
 		2. Supported Formats
 			Full Repository: https://github.com/{owner}/{project}
 			This format points to the root of the repository. You can optionally specify a branch using RepoBranch.
@@ -34,6 +34,7 @@ const (
 			Dockerfile or YAML File:
 			A Dockerfile or yaml file is required in the specified repository or directory for the deployment to work.
 			These files are typically used to define how the application should be built and deployed.
+		4. For more detailed information, refer to https://github.com/swanchain/go-swan-sdk/blob/main/doc/repo_uri.md
 	*/
 	repoUri = "https://lagrange.computer/spaces/0x231fe9090f4d45413474BDE53a1a0A3Bd5C0ef03/MusicGen/app" // repo with yaml
 )
